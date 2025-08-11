@@ -12,13 +12,26 @@ body{
 .galeria{
     display: coluns;
     columns: 3;
-    color: white;
+    color: black;
     text-align: center;
+    
 }
 .galeria img{
     width: 100%;
-    padding-block: 8px;
+    padding-block: 4px;
     border: 2px solid white;
+
 }
-.galeria h2{
+.galeria div{
+    position: relative;
+    text-align: center;
+}
+div p{
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 6px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff4;
 }

@@ -2,54 +2,61 @@
 
 const imagens = [
     {
-        name: "ceruled",
+        name: "Ceruled",
         url: './img/ceruled.png'
     },
     {
-        name: "lunala",
+        name: "Lunala",
         url: './img/lunala.png'
       
     },
     {
-        name: "gengarMega",
+        name: "Mega Gengar",
         url: './img/gengarMega.png'
         
     },
     {
-        name: "darkrai",
+        name: "Darkrai",
         url: './img/darkrai.webp'
     },
     {
-        name: "marshadow",
+        name: "Marshadow",
         url: './img/Marshadow.webp'
        
     },
     {
-        nome: "annihilape",
+        name: "Annihilape",
         url: './img/annihilape.webp'
         
     },
     {
-        name: "litwick",
+        name: "Litwick",
         url: './img/litwick.webp'
     },
     {
-        name: "mimikyu",
+        name: "Mimikyu",
         url: './img/mimikyu.webp'
     },
     {
-        name: "zorua",
+        name: "Zorua",
         url: './img/zorua.png'
     }
   
 ]
 
 function criarImagem(srcImagem){
+    const containerDiv = document.createElement('div')
+
     const galeria = document.getElementById('galeria')
     const imagem  = document.createElement('img')
     imagem.src = srcImagem.url
-    galeria.appendChild(imagem)
- 
+    
+    const text = document.createElement('p')
+    text.textContent = srcImagem.name
+
+    galeria.appendChild(containerDiv)
+    containerDiv.appendChild(text)
+    containerDiv.appendChild(imagem)
 }
 
 function carregarImagens(){
