@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding-block: 8px;
+    background-color: black;
+    display: grid;
+    place-content: center;
+}
+.galeria{
+    display: coluns;
+    columns: 3;
+    color: white;
+    text-align: center;
+}
+.galeria img{
+    width: 100%;
+    padding-block: 8px;
+    border: 2px solid white;
+}
+.galeria h2{
+}
